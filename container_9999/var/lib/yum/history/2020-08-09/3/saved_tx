@@ -1,0 +1,101 @@
+147:ca09b2620396241a1d68db54953f2f402fbb033d
+32
+1
+installed:159:3ab06bec512c1068e4365bc58a75c34e796e939b
+12
+mbr: libcroco,x86_64,0,0.6.12,4.el7 70
+  repo: base
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: gettext,x86_64,0,0.19.8.1,3.el7@a:dependson gettext-libs,x86_64,0,0.19.8.1,3.el7@a:dependson
+  depends_on: gettext,x86_64,0,0.19.8.1,3.el7@a gettext-libs,x86_64,0,0.19.8.1,3.el7@a
+mbr: unzip,x86_64,0,6.0,21.el7 70
+  repo: base
+  ts_state: u
+  output_state: 20
+  isDep: False
+  reason: user
+  reinstall: False
+mbr: libarchive,x86_64,0,3.1.2,14.el7_7 70
+  repo: base
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: bsdtar,x86_64,0,3.1.2,14.el7_7@a:dependson
+  depends_on: bsdtar,x86_64,0,3.1.2,14.el7_7@a
+mbr: scl-utils,x86_64,0,20130529,19.el7 70
+  repo: base
+  ts_state: u
+  output_state: 20
+  isDep: False
+  reason: user
+  reinstall: False
+mbr: gettext,x86_64,0,0.19.8.1,3.el7 70
+  repo: base
+  ts_state: u
+  output_state: 20
+  isDep: False
+  reason: user
+  reinstall: False
+mbr: groff-base,x86_64,0,1.22.2,8.el7 70
+  repo: base
+  ts_state: u
+  output_state: 20
+  isDep: False
+  reason: user
+  reinstall: False
+mbr: rsync,x86_64,0,3.1.2,10.el7 70
+  repo: base
+  ts_state: u
+  output_state: 20
+  isDep: False
+  reason: user
+  reinstall: False
+mbr: libunistring,x86_64,0,0.9.3,9.el7 70
+  repo: base
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: gettext,x86_64,0,0.19.8.1,3.el7@a:dependson gettext-libs,x86_64,0,0.19.8.1,3.el7@a:dependson
+  depends_on: gettext,x86_64,0,0.19.8.1,3.el7@a gettext-libs,x86_64,0,0.19.8.1,3.el7@a
+mbr: gettext-libs,x86_64,0,0.19.8.1,3.el7 70
+  repo: base
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: gettext,x86_64,0,0.19.8.1,3.el7@a:dependson
+  depends_on: gettext,x86_64,0,0.19.8.1,3.el7@a
+mbr: libgomp,x86_64,0,4.8.5,39.el7 70
+  repo: base
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: gettext,x86_64,0,0.19.8.1,3.el7@a:dependson gettext-libs,x86_64,0,0.19.8.1,3.el7@a:dependson
+  depends_on: gettext,x86_64,0,0.19.8.1,3.el7@a gettext-libs,x86_64,0,0.19.8.1,3.el7@a
+mbr: bsdtar,x86_64,0,3.1.2,14.el7_7 70
+  repo: base
+  ts_state: u
+  output_state: 20
+  isDep: False
+  reason: user
+  reinstall: False
+mbr: lzo,x86_64,0,2.06,8.el7 70
+  repo: base
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: bsdtar,x86_64,0,3.1.2,14.el7_7@a:dependson libarchive,x86_64,0,3.1.2,14.el7_7@a:dependson
+  depends_on: bsdtar,x86_64,0,3.1.2,14.el7_7@a libarchive,x86_64,0,3.1.2,14.el7_7@a

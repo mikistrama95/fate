@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /opt/rh/httpd24/root/usr/sbin/apachectl graceful

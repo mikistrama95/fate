@@ -1,0 +1,21 @@
+159:3ab06bec512c1068e4365bc58a75c34e796e939b
+32
+1
+installed:161:da421f36e02eb23840480568fca4a28cad246e11
+2
+mbr: centos-release-scl,noarch,0,2,3.el7.centos 70
+  repo: extras
+  ts_state: u
+  output_state: 20
+  isDep: False
+  reason: user
+  reinstall: False
+mbr: centos-release-scl-rh,noarch,0,2,3.el7.centos 70
+  repo: extras
+  ts_state: u
+  output_state: 20
+  isDep: True
+  reason: dep
+  reinstall: False
+  relatedto: centos-release-scl,noarch,0,2,3.el7.centos@a:dependson
+  depends_on: centos-release-scl,noarch,0,2,3.el7.centos@a

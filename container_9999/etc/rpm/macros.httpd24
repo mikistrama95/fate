@@ -1,0 +1,6 @@
+%_httpd24_mmn 20120211x8664
+%_httpd24_apxs /opt/rh/httpd24/root/usr/bin/apxs
+%_httpd24_modconfdir /opt/rh/httpd24/root/etc/httpd/conf.modules.d
+%_httpd24_confdir /opt/rh/httpd24/root/etc/httpd/conf.d
+%_httpd24_contentdir /opt/rh/httpd24/root/usr/share/httpd
+%_httpd24_moddir /opt/rh/httpd24/root/usr/lib64/httpd/modules

@@ -1,0 +1,10 @@
+[Unit]
+Description=Disk Cache Cleaning Daemon for Apache HTTP Server
+After=httpd24-httpd.service
+
+[Service]
+Type=forking
+User=apache
+PIDFile=/opt/rh/httpd24/root/var/run/httpd/htcacheclean/pid
+EnvironmentFile=/opt/rh/httpd24/root/etc/sysconfig/htcacheclean
+ExecStart=/opt/rh/httpd24/root/usr/sbin/htcacheclean -P /opt/rh/httpd24/root/var/run/httpd/htcacheclean/pid -d $INTERVAL -p $CACHE_ROOT -l $LIMIT $OPTIONS

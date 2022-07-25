@@ -1,0 +1,355 @@
+[base]
+async = True
+bandwidth = 0
+base_persistdir = /var/lib/yum/repos/x86_64/7
+baseurl = http://mirror.ilumno.com/centos/7.8.2003/os/x86_64/,
+   http://mirrors.cmich.edu/centos/7.8.2003/os/x86_64/,
+   http://mirrors.lug.mtu.edu/centos/7.8.2003/os/x86_64/,
+   http://mirrors.oit.uci.edu/centos/7.8.2003/os/x86_64/,
+   http://ewr.edge.kernel.org/centos/7.8.2003/os/x86_64/,
+   http://mirrors.xtom.com/centos/7.8.2003/os/x86_64/,
+   http://mirrors.tummy.com/mirrors/CentOS/7.8.2003/os/x86_64/,
+   http://mirror.centos.iad1.serverforge.org/7.8.2003/os/x86_64/,
+   http://repo1.dal.innoscale.net/centos/7.8.2003/os/x86_64/,
+   http://bay.uchicago.edu/centos/7.8.2003/os/x86_64/
+cache = 0
+cachedir = /var/cache/yum/x86_64/7/base
+check_config_file_age = True
+compare_providers_priority = 80
+cost = 1000
+deltarpm_metadata_percentage = 100
+deltarpm_percentage = 
+enabled = True
+enablegroups = True
+exclude = 
+failovermethod = priority
+ftp_disable_epsv = False
+gpgcadir = /var/lib/yum/repos/x86_64/7/base/gpgcadir
+gpgcakey = 
+gpgcheck = True
+gpgdir = /var/lib/yum/repos/x86_64/7/base/gpgdir
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+hdrdir = /var/cache/yum/x86_64/7/base/headers
+http_caching = all
+includepkgs = 
+ip_resolve = 
+keepalive = True
+keepcache = False
+mddownloadpolicy = sqlite
+mdpolicy = group:small
+mediaid = 
+metadata_expire = 21600
+metadata_expire_filter = read-only:present
+metalink = 
+minrate = 0
+mirrorlist = http://mirrorlist.centos.org/?release=7&arch=x86_64&repo=os&infra=container
+mirrorlist_expire = 86400
+mirrorlist_file = /var/cache/yum/x86_64/7/base/mirrorlist.txt
+name = CentOS-7 - Base
+old_base_cache_dir = 
+password = 
+persistdir = /var/lib/yum/repos/x86_64/7/base
+pkgdir = /var/cache/yum/x86_64/7/base/packages
+proxy = False
+proxy_dict = 
+proxy_password = 
+proxy_username = 
+repo_gpgcheck = False
+retries = 10
+skip_if_unavailable = False
+ssl_check_cert_permissions = True
+sslcacert = 
+sslclientcert = 
+sslclientkey = 
+sslverify = True
+throttle = 0
+timeout = 30.0
+ui_id = base/7/x86_64
+ui_repoid_vars = releasever,
+   basearch
+username = 
+
+[centos-sclo-rh]
+async = True
+bandwidth = 0
+base_persistdir = /var/lib/yum/repos/x86_64/7
+baseurl = http://mirror.centos.iad1.serverforge.org/7.8.2003/sclo/x86_64/rh/,
+   http://mirror.xrepo.net/centos/7.8.2003/sclo/x86_64/rh/,
+   http://mirror.datto.com/CentOS/7.8.2003/sclo/x86_64/rh/,
+   http://us.mirror.nsec.pt/centos/7.8.2003/sclo/x86_64/rh/,
+   http://mirror.san.fastserv.com/pub/linux/centos/7.8.2003/sclo/x86_64/rh/,
+   http://mirror.web-ster.com/centos/7.8.2003/sclo/x86_64/rh/,
+   http://distro.ibiblio.org/centos/7.8.2003/sclo/x86_64/rh/,
+   http://mirrors.cmich.edu/centos/7.8.2003/sclo/x86_64/rh/,
+   http://mirror.mia11.us.leaseweb.net/centos/7.8.2003/sclo/x86_64/rh/,
+   http://mirror.hostduplex.com/centos/7.8.2003/sclo/x86_64/rh/
+cache = 0
+cachedir = /var/cache/yum/x86_64/7/centos-sclo-rh
+check_config_file_age = True
+compare_providers_priority = 80
+cost = 1000
+deltarpm_metadata_percentage = 100
+deltarpm_percentage = 
+enabled = True
+enablegroups = True
+exclude = 
+failovermethod = priority
+ftp_disable_epsv = False
+gpgcadir = /var/lib/yum/repos/x86_64/7/centos-sclo-rh/gpgcadir
+gpgcakey = 
+gpgcheck = True
+gpgdir = /var/lib/yum/repos/x86_64/7/centos-sclo-rh/gpgdir
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+hdrdir = /var/cache/yum/x86_64/7/centos-sclo-rh/headers
+http_caching = all
+includepkgs = 
+ip_resolve = 
+keepalive = True
+keepcache = False
+mddownloadpolicy = sqlite
+mdpolicy = group:small
+mediaid = 
+metadata_expire = 21600
+metadata_expire_filter = read-only:present
+metalink = 
+minrate = 0
+mirrorlist = http://mirrorlist.centos.org?arch=x86_64&release=7&repo=sclo-rh
+mirrorlist_expire = 86400
+mirrorlist_file = /var/cache/yum/x86_64/7/centos-sclo-rh/mirrorlist.txt
+name = CentOS-7 - SCLo rh
+old_base_cache_dir = 
+password = 
+persistdir = /var/lib/yum/repos/x86_64/7/centos-sclo-rh
+pkgdir = /var/cache/yum/x86_64/7/centos-sclo-rh/packages
+proxy = False
+proxy_dict = 
+proxy_password = 
+proxy_username = 
+repo_gpgcheck = False
+retries = 10
+skip_if_unavailable = False
+ssl_check_cert_permissions = True
+sslcacert = 
+sslclientcert = 
+sslclientkey = 
+sslverify = True
+throttle = 0
+timeout = 30.0
+ui_id = centos-sclo-rh/x86_64
+ui_repoid_vars = releasever,
+   basearch
+username = 
+
+[centos-sclo-sclo]
+async = True
+bandwidth = 0
+base_persistdir = /var/lib/yum/repos/x86_64/7
+baseurl = http://linux.cc.lehigh.edu/centos/7.8.2003/sclo/x86_64/sclo/,
+   http://mirror.nodesdirect.com/centos/7.8.2003/sclo/x86_64/sclo/,
+   http://mirror.ash.fastserv.com/centos/7.8.2003/sclo/x86_64/sclo/,
+   http://mirror.shastacoe.net/centos/7.8.2003/sclo/x86_64/sclo/,
+   http://mirror.team-cymru.com/CentOS/7.8.2003/sclo/x86_64/sclo/,
+   http://mirror.twinlakes.net/centos/7.8.2003/sclo/x86_64/sclo/,
+   http://mirror.rackspace.com/CentOS/7.8.2003/sclo/x86_64/sclo/,
+   http://repo1.ash.innoscale.net/centos/7.8.2003/sclo/x86_64/sclo/,
+   http://mirror.jaleco.com/centos/7.8.2003/sclo/x86_64/sclo/,
+   http://mirror.datto.com/CentOS/7.8.2003/sclo/x86_64/sclo/
+cache = 0
+cachedir = /var/cache/yum/x86_64/7/centos-sclo-sclo
+check_config_file_age = True
+compare_providers_priority = 80
+cost = 1000
+deltarpm_metadata_percentage = 100
+deltarpm_percentage = 
+enabled = True
+enablegroups = True
+exclude = 
+failovermethod = priority
+ftp_disable_epsv = False
+gpgcadir = /var/lib/yum/repos/x86_64/7/centos-sclo-sclo/gpgcadir
+gpgcakey = 
+gpgcheck = True
+gpgdir = /var/lib/yum/repos/x86_64/7/centos-sclo-sclo/gpgdir
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+hdrdir = /var/cache/yum/x86_64/7/centos-sclo-sclo/headers
+http_caching = all
+includepkgs = 
+ip_resolve = 
+keepalive = True
+keepcache = False
+mddownloadpolicy = sqlite
+mdpolicy = group:small
+mediaid = 
+metadata_expire = 21600
+metadata_expire_filter = read-only:present
+metalink = 
+minrate = 0
+mirrorlist = http://mirrorlist.centos.org?arch=x86_64&release=7&repo=sclo-sclo
+mirrorlist_expire = 86400
+mirrorlist_file = /var/cache/yum/x86_64/7/centos-sclo-sclo/mirrorlist.txt
+name = CentOS-7 - SCLo sclo
+old_base_cache_dir = 
+password = 
+persistdir = /var/lib/yum/repos/x86_64/7/centos-sclo-sclo
+pkgdir = /var/cache/yum/x86_64/7/centos-sclo-sclo/packages
+proxy = False
+proxy_dict = 
+proxy_password = 
+proxy_username = 
+repo_gpgcheck = False
+retries = 10
+skip_if_unavailable = False
+ssl_check_cert_permissions = True
+sslcacert = 
+sslclientcert = 
+sslclientkey = 
+sslverify = True
+throttle = 0
+timeout = 30.0
+ui_id = centos-sclo-sclo/x86_64
+ui_repoid_vars = releasever,
+   basearch
+username = 
+
+[extras]
+async = True
+bandwidth = 0
+base_persistdir = /var/lib/yum/repos/x86_64/7
+baseurl = http://mirror.keystealth.org/centos/7.8.2003/extras/x86_64/,
+   http://repos.lax.layerhost.com/centos/7.8.2003/extras/x86_64/,
+   http://mirror.vtti.vt.edu/centos/7.8.2003/extras/x86_64/,
+   http://mirror.teklinks.com/centos/7.8.2003/extras/x86_64/,
+   http://mirror.pit.teraswitch.com/centos/7.8.2003/extras/x86_64/,
+   http://centos.s.uw.edu/centos/7.8.2003/extras/x86_64/,
+   http://packages.oit.ncsu.edu/centos/7.8.2003/extras/x86_64/,
+   http://mirrors.gigenet.com/centos/7.8.2003/extras/x86_64/,
+   http://mirror.san.fastserv.com/pub/linux/centos/7.8.2003/extras/x86_64/,
+   http://mirror.ilumno.com/centos/7.8.2003/extras/x86_64/
+cache = 0
+cachedir = /var/cache/yum/x86_64/7/extras
+check_config_file_age = True
+compare_providers_priority = 80
+cost = 1000
+deltarpm_metadata_percentage = 100
+deltarpm_percentage = 
+enabled = True
+enablegroups = True
+exclude = 
+failovermethod = priority
+ftp_disable_epsv = False
+gpgcadir = /var/lib/yum/repos/x86_64/7/extras/gpgcadir
+gpgcakey = 
+gpgcheck = True
+gpgdir = /var/lib/yum/repos/x86_64/7/extras/gpgdir
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+hdrdir = /var/cache/yum/x86_64/7/extras/headers
+http_caching = all
+includepkgs = 
+ip_resolve = 
+keepalive = True
+keepcache = False
+mddownloadpolicy = sqlite
+mdpolicy = group:small
+mediaid = 
+metadata_expire = 21600
+metadata_expire_filter = read-only:present
+metalink = 
+minrate = 0
+mirrorlist = http://mirrorlist.centos.org/?release=7&arch=x86_64&repo=extras&infra=container
+mirrorlist_expire = 86400
+mirrorlist_file = /var/cache/yum/x86_64/7/extras/mirrorlist.txt
+name = CentOS-7 - Extras
+old_base_cache_dir = 
+password = 
+persistdir = /var/lib/yum/repos/x86_64/7/extras
+pkgdir = /var/cache/yum/x86_64/7/extras/packages
+proxy = False
+proxy_dict = 
+proxy_password = 
+proxy_username = 
+repo_gpgcheck = False
+retries = 10
+skip_if_unavailable = False
+ssl_check_cert_permissions = True
+sslcacert = 
+sslclientcert = 
+sslclientkey = 
+sslverify = True
+throttle = 0
+timeout = 30.0
+ui_id = extras/7/x86_64
+ui_repoid_vars = releasever,
+   basearch
+username = 
+
+[updates]
+async = True
+bandwidth = 0
+base_persistdir = /var/lib/yum/repos/x86_64/7
+baseurl = http://repos-va.psychz.net/centos/7.8.2003/updates/x86_64/,
+   http://mirrors.seas.harvard.edu/centos/7.8.2003/updates/x86_64/,
+   http://repo1.ash.innoscale.net/centos/7.8.2003/updates/x86_64/,
+   http://mirror.genesisadaptive.com/centos/7.8.2003/updates/x86_64/,
+   http://mirrors.mit.edu/centos/7.8.2003/updates/x86_64/,
+   http://ftpmirror.your.org/pub/centos/7.8.2003/updates/x86_64/,
+   http://mirrors.raystedman.org/centos/7.8.2003/updates/x86_64/,
+   http://distro.ibiblio.org/centos/7.8.2003/updates/x86_64/,
+   http://mirror.dal10.us.leaseweb.net/centos/7.8.2003/updates/x86_64/,
+   http://repos.lax.layerhost.com/centos/7.8.2003/updates/x86_64/
+cache = 0
+cachedir = /var/cache/yum/x86_64/7/updates
+check_config_file_age = True
+compare_providers_priority = 80
+cost = 1000
+deltarpm_metadata_percentage = 100
+deltarpm_percentage = 
+enabled = True
+enablegroups = True
+exclude = 
+failovermethod = priority
+ftp_disable_epsv = False
+gpgcadir = /var/lib/yum/repos/x86_64/7/updates/gpgcadir
+gpgcakey = 
+gpgcheck = True
+gpgdir = /var/lib/yum/repos/x86_64/7/updates/gpgdir
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+hdrdir = /var/cache/yum/x86_64/7/updates/headers
+http_caching = all
+includepkgs = 
+ip_resolve = 
+keepalive = True
+keepcache = False
+mddownloadpolicy = sqlite
+mdpolicy = group:small
+mediaid = 
+metadata_expire = 21600
+metadata_expire_filter = read-only:present
+metalink = 
+minrate = 0
+mirrorlist = http://mirrorlist.centos.org/?release=7&arch=x86_64&repo=updates&infra=container
+mirrorlist_expire = 86400
+mirrorlist_file = /var/cache/yum/x86_64/7/updates/mirrorlist.txt
+name = CentOS-7 - Updates
+old_base_cache_dir = 
+password = 
+persistdir = /var/lib/yum/repos/x86_64/7/updates
+pkgdir = /var/cache/yum/x86_64/7/updates/packages
+proxy = False
+proxy_dict = 
+proxy_password = 
+proxy_username = 
+repo_gpgcheck = False
+retries = 10
+skip_if_unavailable = False
+ssl_check_cert_permissions = True
+sslcacert = 
+sslclientcert = 
+sslclientkey = 
+sslverify = True
+throttle = 0
+timeout = 30.0
+ui_id = updates/7/x86_64
+ui_repoid_vars = releasever,
+   basearch
+username = 
+
