@@ -1,0 +1,9 @@
+/var/log/httpd24/*log {
+    missingok
+    notifempty
+    sharedscripts
+    delaycompress
+    postrotate
+        /sbin/service httpd24-httpd reload > /dev/null 2>/dev/null || true
+    endscript
+}

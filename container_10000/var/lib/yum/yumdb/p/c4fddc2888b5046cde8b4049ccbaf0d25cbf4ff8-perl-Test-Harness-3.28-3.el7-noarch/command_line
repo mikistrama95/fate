@@ -1,0 +1,1 @@
+install -y --setopt=tsflags=nodocs autoconf automake bzip2 gcc-c++ gd-devel gdb git libcurl-devel libxml2-devel libxslt-devel lsof make mariadb-devel mariadb-libs openssl-devel patch postgresql-devel procps-ng rh-nodejs10-npm sqlite-devel unzip wget which zlib-devel

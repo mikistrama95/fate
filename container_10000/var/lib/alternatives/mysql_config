@@ -1,0 +1,5 @@
+auto
+/usr/bin/mysql_config
+
+/usr/lib64/mysql/mysql_config
+64

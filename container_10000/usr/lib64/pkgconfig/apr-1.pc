@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib64
+APR_MAJOR_VERSION=1
+includedir=/usr/include/apr-1
+CPPFLAGS=-DLINUX -D_REENTRANT -D_GNU_SOURCE
+
+Name: APR
+Description: The Apache Portable Runtime library
+Version: 1.4.8
+Libs: -L${libdir} -lapr-${APR_MAJOR_VERSION}  -lpthread -ldl
+Cflags: ${CPPFLAGS}  -pthread -I${includedir}

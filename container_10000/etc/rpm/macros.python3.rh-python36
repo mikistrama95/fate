@@ -1,0 +1,25 @@
+# define these macros in a way which will expand them to correct values even for non-scl-build, assuming 's/python36//'
+%python36__python3 /opt/rh/rh-python36/root/usr/bin/python3
+%python36__python %python36__python3
+%python36python3_sitelib %(%{?scl:scl enable rh-python36 '}%{python36__python3} -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())"%{?scl:'})
+%python36python_sitelib %python36python3_sitelib
+%python36python3_sitearch %(%{?scl:scl enable rh-python36 '}%{python36__python3} -c "from distutils.sysconfig import get_python_lib; print(get_python_lib(1))"%{?scl:'})
+%python36python_sitearch %python36python3_sitearch
+%python36python3_version %(%{?scl:scl enable rh-python36 '}%{python36__python3} -c "import sys; sys.stdout.write(sys.version[:3])"%{?scl:'})
+%python36python_version %python36python3_version
+
+# these macros won't be needed if doing non-scl build, so define them in a way that won't overwrite system ones
+%python36_os_install_post \
+    /usr/lib/rpm/brp-scl-compress %{_scl_root} \
+    %{!?__debug_package:/usr/lib/rpm/redhat/brp-strip %{__strip} \
+    /usr/lib/rpm/redhat/brp-strip-comment-note %{__strip} %{__objdump} \
+    } \
+    /usr/lib/rpm/redhat/brp-strip-static-archive %{__strip} \
+    %{!?_turn_off_bytecompile:scl enable rh-python36 '/usr/lib/rpm/redhat/brp-python-bytecompile-with-scl-python-36 %python36__python3 %{?_python_bytecompile_errors_terminate_build} %{_scl_root}'} \
+    /usr/lib/rpm/redhat/brp-python-hardlink
+
+%python36_python_provides /usr/lib/rpm/pythondeps-scl-36.sh --provides %{?scl:rh-python36-}
+%python36_python_requires /usr/lib/rpm/pythondeps-scl-36.sh --requires %{?scl:rh-python36-}
+
+%_python_bytecompile_errors_terminate_build 1
+

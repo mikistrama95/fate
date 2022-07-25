@@ -1,0 +1,4 @@
+Name: nss_wrapper
+Description: The nss_wrapper library
+Version: 1.0.3
+Libs: /usr/lib64/libnss_wrapper.so
